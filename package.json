@@ -1,0 +1,42 @@
+{
+  "name": "lean-pirate",
+  "version": "1.0.0",
+  "description": "A simple page for Thomas Kofoed",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel dev:*",
+    "build": "run-s prod:*",
+    "dev:eleventy": "eleventy --serve",
+    "dev:parcel": "parcel watch ./_assets/js/main.js --out-dir ./_site/assets",
+    "prod:eleventy": "eleventy",
+    "prod:parcel": "parcel build ./_assets/js/main.js --out-dir ./_site/assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lajlev/lean-pirate.git"
+  },
+  "keywords": [
+    "Agile",
+    "Strum",
+    "Freelancer",
+    "Simple",
+    "CV",
+    "Eleventy"
+  ],
+  "author": "Michael Lajlev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lajlev/lean-pirate/issues"
+  },
+  "homepage": "https://github.com/lajlev/lean-pirate#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "npm-run-all": "^4.1.5",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "sass": "^1.26.3"
+  }
+}
